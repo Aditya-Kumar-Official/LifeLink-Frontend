@@ -12,6 +12,7 @@ const socials = [
 const Footer = () => (
   <footer className="mt-20 border-t border-line bg-ink text-white/80">
     <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-4">
+      
       <div className="md:col-span-1">
         <Logo tone="light" />
         <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">
@@ -34,17 +35,28 @@ const Footer = () => (
       <div>
         <h3 className="mb-3 font-sans text-sm font-semibold text-white">Contact</h3>
         <ul className="space-y-2.5 text-sm">
-          <li className="flex items-start gap-2"><Phone size={15} className="mt-0.5 shrink-0" /> +91 **********</li>
-          <li className="flex items-start gap-2"><Mail size={15} className="mt-0.5 shrink-0" /> help@lifelink.app</li>
-          <li className="flex items-start gap-2"><MapPin size={15} className="mt-0.5 shrink-0" /> Bhubaneswar, Odisha, India</li>
+          <li className="flex items-start gap-2">
+            <Phone size={15} className="mt-0.5 shrink-0" />
+            +91 **********
+          </li>
+          <li className="flex items-start gap-2">
+            <Mail size={15} className="mt-0.5 shrink-0" />
+            help@lifelink.app
+          </li>
+          <li className="flex items-start gap-2">
+            <MapPin size={15} className="mt-0.5 shrink-0" />
+            Bhubaneswar, Odisha, India
+          </li>
         </ul>
       </div>
 
       <div>
         <h3 className="mb-3 font-sans text-sm font-semibold text-white">In an emergency</h3>
         <p className="text-sm text-white/60">
-          LifeLink does not replace emergency services. For an ambulance, call <span className="font-semibold text-white">108</span>.
+          LifeLink does not replace emergency services. For an ambulance, call{" "}
+          <span className="font-semibold text-white">108</span>.
         </p>
+
         <div className="mt-4 flex gap-2">
           {socials.map(({ Icon, label }) => (
             <a
@@ -60,6 +72,22 @@ const Footer = () => (
       </div>
     </div>
 
+    {/* Academic Project Disclaimer */}
+    <div className="border-t border-white/10">
+      <div className="mx-auto max-w-6xl px-4 py-5 text-center sm:px-6">
+        <p className="text-xs leading-relaxed text-white/50">
+          <span className="font-semibold text-white/70">Disclaimer:</span>{" "}
+          LifeLink is a student-developed prototype for educational and
+          demonstration purposes only. Information displayed may be simulated
+          or incomplete and should not be relied upon for actual medical
+          emergencies or critical healthcare decisions. Please verify
+          important healthcare information through authorized medical
+          professionals or official sources.
+        </p>
+      </div>
+    </div>
+
+    {/* Copyright */}
     <div className="border-t border-white/10">
       <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-5 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between sm:px-6">
         <p>© {new Date().getFullYear()} LifeLink. Built for faster emergency response.</p>

@@ -16,6 +16,21 @@ const About = () => (
       of, post in groups, and travel between hospitals asking the same question. It costs hours that patients often
       don't have.
     </p>
+    <div className="mt-12 rounded-xl border border-line bg-surface p-6">
+  <h2 className="text-xl font-semibold">Important Disclaimer</h2>
+  <p className="mt-3 text-sm leading-relaxed text-ink-muted">
+    LifeLink is a student-developed academic project prototype created for
+    educational and demonstration purposes. This platform is not a replacement
+    for professional medical advice, diagnosis, treatment, or emergency
+    healthcare services.
+  </p>
+  <p className="mt-3 text-sm leading-relaxed text-ink-muted">
+    Information displayed on this platform may be simulated, incomplete, or
+    inaccurate. Users should verify all critical healthcare information through
+    authorized medical professionals, hospitals, blood banks, or official
+    emergency services.
+  </p>
+</div>
 
     <h2 className="mt-12 text-2xl">What people rely on today</h2>
     <dl className="mt-5 divide-y divide-line border-y border-line">
