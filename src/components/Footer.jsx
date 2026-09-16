@@ -34,9 +34,9 @@ const Footer = () => (
       <div>
         <h3 className="mb-3 font-sans text-sm font-semibold text-white">Contact</h3>
         <ul className="space-y-2.5 text-sm">
-          <li className="flex items-start gap-2"><Phone size={15} className="mt-0.5 shrink-0" /> +91 33 4000 1200</li>
+          <li className="flex items-start gap-2"><Phone size={15} className="mt-0.5 shrink-0" /> +91 **********</li>
           <li className="flex items-start gap-2"><Mail size={15} className="mt-0.5 shrink-0" /> help@lifelink.app</li>
-          <li className="flex items-start gap-2"><MapPin size={15} className="mt-0.5 shrink-0" /> Digha, West Bengal, India</li>
+          <li className="flex items-start gap-2"><MapPin size={15} className="mt-0.5 shrink-0" /> Bhubaneswar, Odisha, India</li>
         </ul>
       </div>
 
