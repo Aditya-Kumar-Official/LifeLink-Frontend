@@ -5,6 +5,8 @@ import App from "./App.jsx";
 import { AuthProvider } from "./context/AuthContext.jsx";
 import { ToastProvider } from "./context/ToastContext.jsx";
 import "./index.css";
+// src/main.jsx
+import { Analytics } from '@vercel/analytics/react';
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -12,6 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <AuthProvider>
         <ToastProvider>
           <App />
+          <Analytics />
         </ToastProvider>
       </AuthProvider>
     </BrowserRouter>
