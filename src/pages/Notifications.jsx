@@ -8,7 +8,7 @@ import { timeAgo } from "../utils/format.js";
 
 const Notifications = () => {
   const toast = useToast();
-  const [items, setItems] = useState(null);
+  const [items, setItems] = useState([]);
   const [unread, setUnread] = useState(0);
 
   const load = () =>

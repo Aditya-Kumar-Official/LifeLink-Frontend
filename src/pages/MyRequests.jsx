@@ -10,7 +10,7 @@ import { REQUEST_STATUS } from "../utils/constants.js";
 
 const MyRequests = () => {
   const toast = useToast();
-  const [requests, setRequests] = useState(null);
+  const [requests, setRequests] = useState([]);
   const [status, setStatus] = useState("");
   const [confirm, setConfirm] = useState(null);
   const [busy, setBusy] = useState(false);

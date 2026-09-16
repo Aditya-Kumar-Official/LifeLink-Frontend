@@ -23,7 +23,7 @@ const RequestDetails = () => {
   const toast = useToast();
   const navigate = useNavigate();
   const [state, setState] = useState({ loading: true, request: null, isOwner: false, error: "" });
-  const [matches, setMatches] = useState(null);
+  const [matches, setMatches] = useState([]);
   const [confirm, setConfirm] = useState(null);
   const [busy, setBusy] = useState(false);
 
@@ -67,8 +67,9 @@ const RequestDetails = () => {
   }
 
   const { request, isOwner } = state;
-  const accepted = request.responses.filter((r) => r.action === "Accepted");
-
+  const accepted = (request.responses || []).filter(
+  (r) => r.action === "Accepted"
+);
   return (
     <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6">
       <Link to="/requests" className="btn-quiet btn-sm -ml-3 mb-4"><ArrowLeft size={15} /> All requests</Link>

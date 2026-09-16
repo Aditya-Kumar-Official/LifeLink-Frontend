@@ -11,7 +11,7 @@ const empty = { name: "", relationship: "Parent", phone: "", email: "" };
 
 const EmergencyContacts = () => {
   const toast = useToast();
-  const [contacts, setContacts] = useState(null);
+  const [contacts, setContacts] = useState([]);
   const [editing, setEditing] = useState(null); // null | 'new' | contact
   const [form, setForm] = useState(empty);
   const [errors, setErrors] = useState({});
